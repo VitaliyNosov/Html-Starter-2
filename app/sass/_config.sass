@@ -1,9 +1,6 @@
 // IMPORT SECTION
 
-@impoprt 'node_modules/normalize.css/normalize.css'
-// @import 'node_modules/jquery/dist/jquery.min.js'
-
-
+@import 'node_modules/normalize.css/normalize.css'
 
 // USER VARIABLES SECTION
 
@@ -38,6 +35,14 @@ $gutter: $grid-gutter-width
 
 // GENERAL DOCUMENT STYLES
 
+* 
+	outline: 0 !important
+	// убирает контуры у кнопок
+
+div 
+	box-sizing: border-box 
+  // свойство для переноса текста в IE и других браузерах
+
 ::placeholder
 	color: #666
 
@@ -55,7 +60,6 @@ input, textarea
 body
 	font-family: $roboto
 	font-size: $fontsize
-	margin: 0px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
